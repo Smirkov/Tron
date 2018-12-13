@@ -1,0 +1,63 @@
+@font-face{
+    font-family: "bttn";
+    src: url("GeoSansLight.ttf");
+}
+
+@font-face{
+    font-family: "titre";
+    src: url("Tr2n.ttf");
+}
+
+body{
+    background-color: #000;
+}
+
+#ecran {
+    background-image: url(../img/background.jpeg);
+    background-size: cover;
+}
+
+h1{
+    font-family: "titre";
+    color: #39f7ff;
+}
+a{
+    text-decoration: none;
+}
+.highlight {
+    max-width: 960px;
+    margin:0 auto;
+    font-family: "titre";
+    text-decoration: none;
+}
+
+.highlight .button {
+		display: inline-block;
+		color: #39f7ff;
+		background: #000;
+		margin: 20px;
+		width: auto;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 10px;
+		position: relative;
+		overflow: hidden;
+    padding: 0 5px;
+}
+
+.highlight .button:before {
+		content: "";
+		position: absolute;
+		top: -30px;
+		left: -80px;
+		height: 100px;
+		width: 70px;
+		background: rgba(0, 241, 255, .7);
+		transform: rotate(20deg);
+}
+
+.highlight .button:hover:before {
+		left: 250px;
+		transition: all 1s;
+}
+.highlight {margin-bottom:100px;}
